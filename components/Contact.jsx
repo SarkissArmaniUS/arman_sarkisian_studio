@@ -45,6 +45,7 @@ export default function Contact() {
             </div>
 
             <form onSubmit={onSubmit} className="space-y-5 rounded-3xl border border-line p-6 sm:p-8">
+                <input type="text" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hidden" />
                 <div className="space-y-2">
                     <label htmlFor="name" className="text-sm font-medium">Your name</label>
                     <Input id="name" name="name" required maxLength={80} autoComplete="name" className={fieldClass} />
